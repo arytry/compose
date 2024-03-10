@@ -47,10 +47,6 @@ jobs:
       - name: Build React site
         run: yarn build
 
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
-
       # 自定义域名
       - name: Custom CNAME
         env:

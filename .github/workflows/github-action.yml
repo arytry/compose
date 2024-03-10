@@ -46,7 +46,7 @@ jobs:
       # 运行构建脚本
       - name: Build React site
         run: yarn build
-        
+
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
@@ -56,7 +56,7 @@ jobs:
         env:
           CNAME: compose.arytry.com
         run:
-          cd duild && echo $CNAME > CNAME
+          cd build && echo $CNAME > CNAME
 
       # 查看 workflow 的文档来获取更多信息
       # @see https://github.com/crazy-max/ghaction-github-pages
